@@ -2,4 +2,32 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  max-height: 80px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+
+.navlist {
+  align-content: center;
+}
+
+.project-2-img {
+ max-width: 200px;
+ max-height: 200px;
+}
+
+h2 {
+  font-size: 25px;
+  text-decoration: underline;
+  color: aquamarine;
 }
