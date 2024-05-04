@@ -10,24 +10,46 @@ body {
 }
 
 header {
-  max-height: 80px;
+  height: 80px;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 10px 20px;
+  padding: 10px 10px;
+  
 }
 
-.navlist {
+.navlist, header h1 {
   align-content: center;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-1-img {
+  max-height: 500px;
+  max-width: 500px;
+  padding-bottom: 10px;
 }
 
 .project-2-img {
  max-width: 200px;
  max-height: 200px;
+ 
 }
 
 h2 {
   font-size: 25px;
   text-decoration: underline;
   color: aquamarine;
+  padding: 10px 0 10px 10px;
 }
+
+
+
+#aboutme p, #bottom li {
+  padding-left: 10px;
+}
+
