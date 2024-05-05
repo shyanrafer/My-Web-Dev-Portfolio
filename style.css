@@ -20,7 +20,12 @@ header {
 
 header button {
   color: blue;
-  height: 20px;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+  background-color: skyblue;
+  font-family: monospace;
+
 }
 
 .navlist, header h1 {
@@ -65,13 +70,23 @@ h2 {
 .navlist button:hover {
   border: solid;
   border-color: orange;
+  cursor: pointer;
 
 }
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
-    align-content: center;
-    
+    border: groove;
   }
-  
+
+  h1 {
+   display: flex;
+   justify-content: center;
+  }
+
+  .navlist {
+    display: flex;   
+    justify-content: space-evenly;
+  }
+
 }
