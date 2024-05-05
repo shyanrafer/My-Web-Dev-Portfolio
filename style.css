@@ -18,6 +18,11 @@ header {
   
 }
 
+header button {
+  color: blue;
+  height: 20px;
+}
+
 .navlist, header h1 {
   align-content: center;
 }
@@ -31,13 +36,13 @@ header {
 .project-1-img {
   max-height: 500px;
   max-width: 500px;
-  padding-bottom: 10px;
+  margin: px;
 }
 
 .project-2-img {
  max-width: 200px;
  max-height: 200px;
- 
+ margin: 5px;
 }
 
 h2 {
@@ -47,9 +52,26 @@ h2 {
   padding: 10px 0 10px 10px;
 }
 
-
-
 #aboutme p, #bottom li {
   padding-left: 10px;
 }
 
+.project-1-img:hover, .project-2-img:hover {
+  cursor: pointer;
+  border: solid;
+  border-color: gray;
+}
+
+.navlist button:hover {
+  border: solid;
+  border-color: orange;
+
+}
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-content: center;
+    
+  }
+  
+}
