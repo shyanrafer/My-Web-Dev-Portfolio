@@ -10,7 +10,7 @@ body {
 }
 
 header {
-  height: 80px;
+  max-height: 100%;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
@@ -41,7 +41,7 @@ header button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 750px;
+  max-height: 100%;
   max-width: 100%;
 }
 
@@ -91,8 +91,15 @@ h2 {
   cursor: pointer;
 }
 
-.bottom {
+#bottom {
   clear: both;
+  display: block;
+}
+
+.back-to-top {
+  float: right;
+  margin: 0px 5px 0px 0px;
+  vertical-align: baseline;
 }
 
 /* the more I dive into media queries and the dynamics of my page the more I realize one could, and essentially does, 
@@ -141,10 +148,15 @@ restyle the entire page per given media query */
     border: none;
     display: flex;
     flex-direction: column;
+    max-height: 100px;
   }
 
   h1 {
     position: relative;
+  }
+
+  .navlist a {
+    
   }
 
   
