@@ -18,9 +18,15 @@ header {
   
 }
 
+.avatar {
+  height: 79px;
+  width: 50px;
+}
+
+/* The h1 isn't quite center aligned. I have tried justify-content center and also text-align center, neither worked. */
+
 h1 {
-  text-decoration: wavy;
-  text-decoration: azure;
+  
 }
 
 header button {
@@ -37,6 +43,9 @@ header button {
   align-content: center;
 }
 
+/* set max height and width to 100% as i believe that allows me to stylize item individually or allow their natural size to be 
+what is displayed. */
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -45,16 +54,18 @@ header button {
   max-width: 100%;
 }
 
-.project-1-content {
+.project-1-content, .project-2-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 h3 {
   padding: 10px 0 5px 10px;
   text-decoration: underline;
 }
+
 
 .project-1-img {
   max-height: 500px; 
@@ -79,6 +90,11 @@ h2 {
   padding-left: 10px;
 }
 
+.refactoring-span {
+  color: blueviolet;
+  text-decoration: underline;
+}
+
 .project-1-img:hover, .project-2-img:hover {
   cursor: pointer;
   border: solid 2px;
@@ -98,7 +114,7 @@ h2 {
 
 .back-to-top {
   float: right;
-  margin: 0px 5px 0px 0px;
+  margin: 0px 5px 5px 0px;
   vertical-align: baseline;
 }
 
@@ -108,7 +124,7 @@ restyle the entire page per given media query */
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
-    border: groove;
+    align-items: center;
   }
 
   h1 {
@@ -118,7 +134,7 @@ restyle the entire page per given media query */
 
   .navlist {
     display: flex;   
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
 }
@@ -130,9 +146,9 @@ restyle the entire page per given media query */
   }
 
   header {
-    max-height: 100px;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
 
@@ -143,12 +159,11 @@ restyle the entire page per given media query */
 
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 355px) {
   header {
     border: none;
     display: flex;
     flex-direction: column;
-    max-height: 100px;
   }
 
   h1 {
