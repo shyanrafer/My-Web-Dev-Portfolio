@@ -113,14 +113,15 @@ h2 {
 
 .project-1-img:hover, .project-2-img:hover {
   cursor: pointer;
-  border: solid 2px;
-  border-color: gray;
+  webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+    filter: blur(1px);
 }
 
 .navlist button:hover {
   border: solid;
   border-color: orange;
   cursor: pointer;
+  transition: ease-in-out 0.3s;
 }
 
 #bottom {
