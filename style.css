@@ -1,3 +1,5 @@
+/* From this assignment I have acquired a better understanding of CSS. I have a solid grasp of basics but still need work on positioning, especially items side by side. */ 
+
 * {
   margin: 0;
   padding: 0;
@@ -176,6 +178,8 @@ restyle the entire page per given media query */
 
 }
 
+/* I don't know if I need to go this small but at this size and smaller loads of issues arise. How do I accomodate tiny window sizes? */
+
 @media screen and (max-width: 355px) {
   header {
     border: none;
@@ -193,3 +197,5 @@ restyle the entire page per given media query */
 
   
 }
+
+/* Lots of instances of flex. Not sure if each container needs that or if there is a way to set that on a higher level and consolidate lines. */
