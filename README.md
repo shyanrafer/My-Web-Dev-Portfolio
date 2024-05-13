@@ -23,4 +23,6 @@ This is on style.css line 118 to 119.
 Everything else in the document I wrote. 
 
 link to deployed app
-https://shyanrafer.github.io/module-2-challenge/
+https://shyanrafer.github.io/module-2-challenge/ - do not use
+UPDATED LINK
+https://shyanrafer.github.io/My-Web-Dev-Portfolio/
